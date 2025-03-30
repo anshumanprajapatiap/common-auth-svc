@@ -1,0 +1,15 @@
+server:
+    port: 8080
+spring:
+    pplication:
+        name: common-auth-svc
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgress?useSSL=false
+        username: postgres
+        password: root
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
